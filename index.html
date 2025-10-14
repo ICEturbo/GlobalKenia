@@ -1,1 +1,121 @@
+<!DOCTYPE html>
+<html lang="nl">
 
+<head>
+    <!--links-->
+    <link rel="stylesheet" href="Voorpaginastylesheet.css" type="text/css"/>
+    <!-- https://stackoverflow.com/questions/19977506/selecting-a-parent-directory-in-html voor het vinden van de parent voor de file directory-->
+    <link rel="icon" href="../sources/GlobalExplorationLogo.png" type="png"/>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stagereis Mongolië</title>
+
+
+    <!--Webfont--> 
+    <!--https://fonts.google.com/specimen/Poppins bron voor de webfont-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    
+    <!-- Gebied met: Navigation, introd-->
+    <header>
+        
+        <div class="overlay"></div>
+        <nav class="nav-container">
+            <!-- https://www.w3schools.com/html/html_links.asp om knop klikbaar te maken-->
+            <button onclick="document.location='index.html'" class="nav-button">Home</button>
+            <button onclick="document.location='over-mongolië.html'" class="nav-button">Over Mongolië</button>
+            <button onclick="document.location='mijn-ervaring.html'" class="nav-button">Mijn ervaring</button>
+            <button onclick="document.location='sponsoring.html'" class="nav-button">Sponsoring</button>
+            <button onclick="document.location='contact.html'" class="nav-button">Contact</button>
+        </nav>
+        
+        <div class="background-box">
+            
+            <div class="title-box">
+                <h1>Mongolië: Een stage vol impact</h1>
+                <progress id="file" value="0" max="1950"></progress>                
+                <h2>Home</h2>
+            </div>
+                <div class="logo-box">
+                <img onclick="document.location='index.html'" src="../sources/GlobalExplorationLogo.png" type="png" href="http://www.google.com" />
+            </div>
+        </div>
+    </header>
+
+    <!-- Over de website gedeelte -->
+    <section id="Article1">
+        <div class="border-box">
+            <article style="padding-bottom: 0;">
+                <h2>Over stagereis Mongolië</h2>
+                <p>Op deze website deel ik mijn ervaring met mijn stagereis naar Mongolië. Ik vertel over de voorbereidingen, de reis zelf en wat er daarna gebeurde. Daarnaast lees je meer over mij, het land Mongolië en hoe ik de sponsoring heb geregeld. Ook besteed ik aandacht aan Stichting Global Exploration, de organisatie achter deze reis die jongeren over heel de wereld met elkaar verbind door middel van projecten op scholen en in de wereld. Zo werken ze aan wereldburgerschap onder jongeren.</p>
+                
+            </article>
+            <aside>
+                <img src="../sources/image.svg" alt="Foto Kon niet laden.">
+            </aside>
+        </div>
+    </section>
+    
+    <!-- Over mij gedeelte -->
+    <section id="Article2">
+        <div class="border-box">
+            <article>
+                <h2>Over mij</h2>
+                <h3>"Ik was nieuwsgierig naar hoe zo’n verre bestemming eruit zou zien en had zin in een avontuur met leerlingen van mijn leeftijd."</h3>
+                <p>Hoi, ik ben Maurits. In de zomervakantie van 2024 ben ik samen met een groep leerlingen van het SGA en het Montessori College Nijmegen op stagereis naar Mongolië geweest met Stichting Global Exploration. Ik speel hockey, waar ik zowel als verdediger en keeper op het veld sta. Daarnaast game ik veel en heb ik een  interesse in technologie.</p>
+                <br>
+                <p>Ik heb me ingeschreven voor de stagereis naar Mongolië nadat ik de informatieavond erg interessant vond. Ik was nieuwsgierig naar hoe zo’n verre bestemming eruit zou zien en had zin in een avontuur met leerlingen van mijn leeftijd.</p>
+                <br>
+                <div class="redirect-container">
+                    <button onclick="document.location='mijn-ervaring.html'" class="redirect-button">klik hier om meer over mijn reis te lezen.</button>
+                </div>
+            </article>
+            <aside>
+                <img src="../sources/Profielfoto.jpg" alt="Foto Kon niet laden.">
+            </aside>
+        </div>
+    </section>
+
+    <!-- Footer gedeelte -->
+    <footer>
+        <div class="footerdiv">
+            <aside class="footeraside">
+                
+                <img onclick="document.location='index.html'" src="../sources/GlobalExplorationLogo.png" type="png" id="footerlogo" href="http://www.google.com" />
+            </aside>
+    
+            <aside class="footeraside">
+                <h3>Adres</h3>
+                <p>Thorbeckestraat 43</p>
+                <p>6950 TB Arnhem</p>
+                <a href="mailto:SGA007440@ll.gymnasiumarnhem.nl">E-mailadres</a>
+            </aside>
+    
+            <aside class="footeraside">
+                <h3>Informatie</h3>
+                <a href="over-mongolië.html">Over Mongolië</a>
+                <a href="mijn-ervaring.html">Mijn ervaring</a>
+                <a href="sponsoring.html">Sponsoring</a>
+            </aside>
+    
+            <aside class="footeraside">
+                <h3>Social media</h3>
+                <!--https://www.w3schools.com/Tags/tryit.asp?filename=tryhtml_link_target na klikken van link opent de website in een ander tablat-->
+                <a target="_blank" href="https://www.instagram.com/maurits_pijnenburg/">Instagram</a>
+                <a target="_blank" href="https://www.polarsteps.com/MauritsPijnenburg/11227722-xplore-mongolie">Polarsteps</a>
+            </aside>
+
+            
+        </div>
+        <div class="Copyright">
+            <P>© 2025 Maurits Pijnenburg</P>
+        </div>
+    </footer>
+
+</body>
+</html>

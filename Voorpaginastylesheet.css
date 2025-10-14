@@ -1,0 +1,403 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Header gedeelte */
+header {
+    h1 {
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 1.7em;
+        font-weight: bold;
+        text-align: center;
+        color: white;    
+    }
+    
+    h2 {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 1.3em;
+        font-weight: lighter;
+        font-style: italic;
+        text-align: center;
+        color: rgb(255, 255, 255);
+    }
+    
+}
+
+@media only screen and (max-width: 900px) {
+    header {
+        h1 {
+            font-size: 4vh;
+        }
+
+        h2 {
+            font-size: 2.5vh;
+        }
+    }
+
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 80vh;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Logo */
+.logo-box {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    width: 10%;
+
+    /* Weergeven dat logo klikbaar is */
+    cursor: pointer;
+}
+.logo-box img { 
+    width: 100%;
+    height: auto;
+    @media only screen and (max-width: 600px) {
+        width: 175%;
+    }
+}
+
+progress {
+  position: relative;
+  left: -25%;
+  width: 150%;
+  height: 40px;      /* hoger maken */
+  border-radius: 25px;  /* afgeronde hoeken */
+  overflow: hidden;     /* zorgt dat de vulling ook afgerond is */
+}
+
+/* Achtergrond van de balk */
+progress::-webkit-progress-bar {
+  background-color: #eeeeeea9;   /* lichte achtergrond */
+  border-radius: 25px;
+}
+
+/* Gevuld gedeelte van de balk (voor Chrome/Safari/Edge) */
+progress::-webkit-progress-value {
+  background-color: #d6bd1c; /* groene kleur */
+  border-radius: 25px;
+}
+
+
+/* instellingen background afbeelding */
+.background-box {   
+    width: 100%;
+    min-height: 80vh; 
+    background-image: url('../sources/Header_IMG1.JPEG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    /* https://www.w3schools.com/css/css_background.asp */
+    /* https://www.w3schools.com/css/css_boxmodel.asp */
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Title en ondertitel */
+.title-box {
+    position: relative;
+}
+
+/* Navigatie */
+.nav-container {
+    position: absolute;
+    top: 5%;
+    display: flex;
+    gap: 1vw;
+    left: 50%;
+
+    
+    transform: translate(-50%, 0%);
+}
+
+.nav-button {
+    background-color: #04aa6d00; /* Green */
+    border: 3px solid rgb(255, 255, 255);
+    color: white;
+    padding: 1.0vh 2.5vw;
+    font-size: 1em;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 1px;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+/* Animatie navigatie knoppen */
+.nav-button:hover {
+    background-color: rgba(0, 0, 0, 0.31);
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-button {
+        font-size: 2.65vw;
+    }
+    .nav-container {
+        top: 10%;
+        gap: 0.5vw;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .nav-button {
+        font-size: 1.2vw;
+    }
+    .nav-container {
+        top: 5%;
+        gap: 0.5vw;
+    }
+}
+
+/* Over mij en over global gedeelte */
+section {
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+
+.border-box {
+    display: flex;
+    background-color: rgba(169,212,245,255);
+    margin: 100px;
+    top: 12px;
+    border: 12px solid rgba(169,212,245,255);
+    border-radius: 12px ;
+    justify-content: center;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+
+    article {
+        flex-direction: column;
+        justify-content: start;
+        display: flex;
+        flex: 2;
+        position: relative; 
+        width: 100%;
+        padding: 30px;  
+
+        h2 {
+            font-size: 4.5em;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            font-style: normal;
+            font-weight: bold;
+
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h3 {
+            font-size: 1.5em;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            font-style: italic;
+            font-weight: bold;
+
+            border-style: solid;
+            border-width: 3px;
+            border-color: rgb(0, 0, 0);
+
+            font-family: 'Poppins', sans-serif;
+            padding: 5px;
+            margin-left: 2%;
+            margin-top: 5%;
+            margin-right: 2%;
+            margin-bottom: 5%;
+        }
+
+        p { 
+            justify-content: center;
+            font-size: 1.3em;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+        }
+    }
+
+    aside {
+        justify-content: space-between;
+        display: flex;
+        flex: 1;
+        position: relative;
+        width: 40%;
+        gap: 20px;
+    }
+    
+}
+
+aside img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1200px) {
+    .border-box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        margin: 30px;
+    }
+
+    article {
+        padding: 10px;
+        margin: 0px;  
+        width: 100%;
+    }
+
+    article, aside {
+        width: 100%;
+    }
+    
+    article, aside, p {
+        font-size: 0.7em;
+    }
+    aside {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    aside img {
+        width: 100%;
+    }
+}
+
+.redirect-container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.redirect-button {
+    background-color: #04aa6d00;
+    border: 3px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    padding: 1.0vh 2.5vw;
+    font-size: 1em;
+    text-decoration: none;
+    display: inline;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 1px; 
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    width: 50%;
+    margin-top: 3%;
+}
+
+.redirect-button:hover {
+    background-color: rgba(0, 0, 0, 0.31);
+    color: white;
+}
+
+#Article2 .border-box {
+    background-color: hwb(112 45% 15%);
+    border-color: hwb(112 45% 15%);
+
+    margin-top: 0;
+}
+
+#Article1 .border-box aside image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+
+/* Footer gedeelte */
+#footerlogo {
+    height: 60%;
+    width: 60%; 
+}
+
+footer {
+    background-color: rgb(57, 57, 57);
+    padding: 5% 15% 1% 15%;
+}
+
+.footerdiv {
+    flex: 4;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    a, p {
+        margin: 0;
+        padding: 0;
+        font-size: 0.7em;
+        color: rgb(255, 255, 255);
+        font-family: 'Poppins', sans-serif;
+    }
+
+    h3 {
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .footerdiv{
+        flex-direction: column;
+        align-content: center;
+        align-items: flex-start;
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        gap: 20px;
+    }  
+
+    #footerlogo {
+        height: 30%;
+        width: 0%;
+        
+        cursor: pointer;
+    }
+
+    .Copyright {
+        padding-top: 20%;
+        font-size: 0.75em;
+    }
+}
+ 
+.footeraside {
+    gap: 10px;
+    display: flex;
+    flex: 0 0 25%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    color: rgb(255, 255, 255);
+
+    color: white;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.Copyright {
+    text-align: center;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    background-color: rgb(57, 57, 57);
+    padding-top: 4%;
+    color: white;
+
+    p {
+        font-size: 0.75em;
+    }
+    
+}
