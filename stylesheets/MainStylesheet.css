@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;700&display=swap');
+body {
+        font-family: Bricolage Grotesque, 'Courier New', Courier, monospace, sans-serif;
+        background-color: wheat;
+}
+
+h1 {
+    font-size: 4.5rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: lighter;
+}
+
+.nav-button-secondary,
+.nav-button-primary {
+    display: inline-block;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 18px;
+    border: 0rem solid #470900;
+    font-weight: bold;
+    font-family: Bricolage Grotesque, 'Courier New', Courier, monospace, sans-serif;
+    transition: all 0.3s ease;
+
+
+    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.2);
+    font-size: 1.5rem;
+    
+}
+
+.nav-button-primary {
+    background-color: #470900;
+    color: white;
+    float: left;
+    margin-right: 5px;  
+}
+
+.nav-button-secondary {
+    background-color: #F1F1F1;
+    color: #470900;
+
+    padding: 0.73rem 1.7rem;
+    border: 0.3rem solid #470900;
+    float: right;
+}
+
+.nav-button-primary:hover {
+    cursor: pointer;
+    background-color: #380800;
+    box-shadow: 0px 6px 2px rgba(0, 0, 0, 0.3);
+}
+.nav-button-secondary:hover {
+    cursor: pointer;
+    background-color: #470900;
+    color: white;
+    box-shadow: 0px 6px 2px rgba(0, 0, 0, 0.3);
+}
+
+.nav-bar {
+    top: 1rem;
+    left: 10%;
+    right: 10%;
+    padding: 0.75rem;
+    border-radius: 20px;
+    position: fixed;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0.01cm;
+    color: #FFFFFF;
+}
