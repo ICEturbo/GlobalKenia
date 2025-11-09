@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stylesheets/MainStylesheet.css" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200&display=swap" rel="stylesheet">
+    
+    
+
+    <title>Mijn stagereis</title>
+
+    <style>
+        .description {
+            text-align: center;
+            justify-content: center;
+            padding: 3rem 25% 3rem 25%;
+        }
+
+        producttitle {
+            padding-top: 1%;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        productomschrijving {
+            font-size: 1.5rem;
+            font-weight: lighter;;  
+        }
+
+        productprijs {
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding-bottom: 20px;
+        }
+
+        .item {
+            flex-direction: column;
+            display: flex;
+            padding-left: 7%;
+            padding-right: 7%;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            padding: 5px;
+            gap: 5px;
+            padding-left: 3%;
+            padding-right: 3%;
+        }
+
+        .item img {
+            border-radius: 12px;
+            transition: box-shadow 0.3s ease, border-radius 0.3s ease;
+        }
+
+        .item img:hover {
+            box-shadow: 1px 0px 20px 1px rgba(0, 0, 0, 0.5);
+            border-radius: 12px;
+        }
+
+        footer {
+            margin-top: 5%;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+
+    <header>
+
+        <div id="sideMenu" class="side-menu">
+            <div class="menu-top">
+                <div style="color: black;float: left;font-size: 30px;" class="hamburger" onclick="toggleMenu()">&times;</div>
+                <button class="nav-button-primary">Home</button>
+                <button class="nav-button-primary">Assortiment</button>
+                <button class="nav-button-primary">Blog</button>
+                <button class="nav-button-primary">Contact</button>
+            </div>
+
+            <div class="menu-bottom">
+                <img src="../sources/logo.svg" alt="Foto Kon niet laden." style="height: 50px;">
+                <button id="openPopupSidebar" class="nav-button-secondary">Bestel nu</button>
+            </div>
+        </div>
+
+        <section class="title">
+            <h1>Kenia: Een stagereis vol avondtuur</h1>
+            <subtitle style="margin-top: 0;">Assortiment</subtitle>
+        </section>
+
+        <section class="nav-bar">
+            <div id="PC" style="float: right;">
+                <img style="float: left;padding-right: 10px;padding-top: 5px;" src="../sources/logo.svg" alt="Foto Kon niet laden.">
+                <button class="nav-button-primary">Home</button>
+                <button onclick="document.location='Assortiment.html'" class="nav-button-primary">Assortiment</button>
+                <button class="nav-button-primary">Blog</button>
+                <button class="nav-button-primary">Contact</button>
+            </div>
+            <div id="Phone" style="float: right;">
+                <div class="navbar">
+                    <div style="color: black;" id="moveburger" class="hamburger" onclick="toggleMenu()">☰</div>
+                </div>
+            </div>
+            <div style="float: right;">
+                <button id="openPopupHeader" class="nav-button-secondary">Bestel nu</button>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="description">
+            <h2>Het assortiment</h2>
+            <h3>Om mijn stagereis te sponseren kan je verschillende producten kopen. Hieronder kan je het assortiment bekijken. Mocht je iets willen bestellen dan kan je een mail sturen naar <a href="mailto:m.pijnenburg@ll.gymnasiumarnhem.nl
+?subject=Bestelling
+&body=Ik%20wil%20graag%20een%20bestelling%20plaatsen.%0D%0A%0D%0ABestelling%20(vermeld%20ook%20de%20hoeveelheid):%0D%0A%0D%0ABezorgadres:%0D%0A%0D%0ABetaalmethode%20(Contant,%20Tikkie%20of%20doneerlink):%0D%0A%0D%0ABestelling%20geplaatst%20via%20(Maurits%20of%20Willy%20—%20als%20je%20het%20niet%20weet,%20vul%20Maurits%20in):%0D%0A%0D%0AOpmerkingen%20of%20vragen:%0D%0A%0D%0AMet%20vriendelijke%20groet,%0D%0A[Uw%20naam]"
+   target="_blank"
+   rel="noopener noreferrer">
+    m.pijnenburg@
+</a><a href="mailto:m.pijnenburg@ll.gymnasiumarnhem.nl
+?subject=Bestelling
+&body=Ik%20wil%20graag%20een%20bestelling%20plaatsen.%0D%0A%0D%0ABestelling%20(vermeld%20ook%20de%20hoeveelheid):%0D%0A%0D%0ABezorgadres:%0D%0A%0D%0ABetaalmethode%20(Contant,%20Tikkie%20of%20doneerlink):%0D%0A%0D%0ABestelling%20geplaatst%20via%20(Maurits%20of%20Willy%20—%20als%20je%20het%20niet%20weet,%20vul%20Maurits%20in):%0D%0A%0D%0AOpmerkingen%20of%20vragen:%0D%0A%0D%0AMet%20vriendelijke%20groet,%0D%0A[Uw%20naam]"
+   target="_blank"
+   rel="noopener noreferrer">
+    ll.gymnasiumarnhem.nl
+</a></h3>
+        </section>
+
+        <section class="container">
+            <div class="item">
+                <img src="../sources/EngelKaars.jpg" alt="Foto kon niet laden">
+                <producttitle>Kerstengel</producttitle>
+                <productomschrijving>kerstkaars</productomschrijving>
+                <productprijs>€ 5</productprijs>
+            </div>
+            <div class="item">
+                <img src="../sources/KerstmutsKaars3.jpg" alt="Foto kon niet laden">
+                <producttitle>Kerstmuts</producttitle>
+                <productomschrijving>kerstkaars</productomschrijving>
+                <productprijs>€ 5</productprijs>
+            </div>
+            <div class="item">
+                <img src="../sources/RondeKerstboomKaars2.jpg" alt="Foto kon niet laden">
+                <producttitle>Kerstboom (rond)</producttitle>
+                <productomschrijving>kerstkaars</productomschrijving>
+                <productprijs>€ 5</productprijs>
+            </div>
+            <div class="item">
+                <img src="../sources/PlatteKerstboomKaars.jpg" alt="Foto kon niet laden">
+                <producttitle>Kerstboom (plat)</producttitle>
+                <productomschrijving>kerstkaars</productomschrijving>
+                <productprijs>€ 5</productprijs>
+            </div>
+            <div class="item">
+                <img src="../sources/DennenappelKaars3.jpg" alt="Foto kon niet laden">
+                <producttitle>Dennenappel</producttitle>
+                <productomschrijving>kerstkaars</productomschrijving>
+                <productprijs>€ 5</productprijs>
+            </div>
+            <div class="item">
+                <img src="../sources/SterkbakjeKaars.jpg" alt="Foto kon niet laden">
+                <producttitle>Sterbakje</producttitle>
+                <productomschrijving>kerstkaars</productomschrijving>
+                <productprijs>€ 5</productprijs>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footerdiv">
+            <aside class="footeraside">
+                
+                <img onclick="document.location='Assortiment.html'" src="../sources/logo.svg" type="svg" id="footerlogo" href="http://www.google.com" />
+            </aside>
+    
+            <aside class="footeraside">
+                <h3>Doneer</h3>
+                <a href="assortiment.html">Bestel nu</a> 
+                <a href="https://donatie.global-exploration.nl/sponsor/GE-2895?back=true&donation=true">Doneer direct</a> 
+                <a href="mailto:m.pijnenburg@ll.gymnasiumarnhem.nl
+?subject=Donatie%20via%20mail
+&body=Hoi%20ik%20wil%20een%20donatie%20doen%20via%20mail,%0D%0A%0D%0ABedrag of materiële donatie:%0D%0A%0D%0ABetaalmethode%20(Contant,%20Tikkie,%20doneerlink%20of%20anders):%0D%0A%0D%0AOpmerkingen%20of%20vragen:%0D%0A%0D%0AMet%20vriendelijke%20groet,%0D%0A[Uw%20naam]"
+   target="_blank"
+   rel="noopener noreferrer">
+    Donatie via mail</a>
+            </aside>
+    
+            <aside class="footeraside">
+                <h3>Informatie</h3>
+                <a href="https://iceturbo.github.io/Eindopdracht/pages/index">Stagereis Mongolië</a>
+                <a href="contact.html">Contact</a>  
+                <a href="blog.html">Blog</a>
+            </aside>
+    
+            <aside class="footeraside">
+                <h3>Social media</h3>
+                <a target="_blank" href="https://www.instagram.com/maurits_pijnenburg/">Instagram</a>
+                <a target="_blank" href="https://www.polarsteps.com/MauritsPijnenburg">Polarsteps</a>
+
+                
+
+                
+            </aside>
+
+            
+        </div>
+        <div class="Copyright">
+            <P>© 2025 Maurits Pijnenburg</P>
+        </div>
+    </footer>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span id="closePopup" class="close">&times;</span>
+            <h2 style="margin-top: 0;margin-bottom: 0;">Bestellen</h2>
+            <p>Leuk dat u iets wil bestellen!</p>
+            <p>Stuur een mailtje met uw bestelling naar: <a href="mailto:m.pijnenburg@ll.gymnasiumarnhem.nl
+?subject=Bestelling
+&body=Ik%20wil%20graag%20een%20bestelling%20plaatsen.%0D%0A%0D%0ABestelling%20(vermeld%20ook%20de%20hoeveelheid):%0D%0A%0D%0ABezorgadres:%0D%0A%0D%0ABetaalmethode%20(Contant,%20Tikkie%20of%20doneerlink):%0D%0A%0D%0ABestelling%20geplaatst%20via%20(Maurits%20of%20Willy%20—%20als%20je%20het%20niet%20weet,%20vul%20Maurits%20in):%0D%0A%0D%0AOpmerkingen%20of%20vragen:%0D%0A%0D%0AMet%20vriendelijke%20groet,%0D%0A[Uw%20naam]"
+   target="_blank"
+   rel="noopener noreferrer">
+    m.pijnenburg@ll.gymnasiumarnhem.nl
+</a>
+            <p>Dan regelen we de betaling en verzending via de mail.</p>
+            <p>Mocht u in de buurt van Arnhem of Dieren wonen dan zou ik het bij u kunnen afleveren.
+            Als u verder woont moeten we iets afspreken.</p>
+            
+            <i>Wilt u het assortiment nog even bekijken voordat u iets bestelt klik dan hieronder:</i>
+            <p></p>
+            <span id="viewProducts" class="nav-button-primary" style="float: none;">Bekijk assortiment</span>
+            <a class="nav-button-secondary" style="float: none;" href="mailto:m.pijnenburg@ll.gymnasiumarnhem.nl
+?subject=Bestelling
+&body=Ik%20wil%20graag%20een%20bestelling%20plaatsen.%0D%0A%0D%0ABestelling%20(vermeld%20ook%20de%20hoeveelheid):%0D%0A%0D%0ABezorgadres:%0D%0A%0D%0ABetaalmethode%20(Contant,%20Tikkie%20of%20doneerlink):%0D%0A%0D%0ABestelling%20geplaatst%20via%20(Maurits%20of%20Willy%20—%20als%20je%20het%20niet%20weet,%20vul%20Maurits%20in):%0D%0A%0D%0AOpmerkingen%20of%20vragen:%0D%0A%0D%0AMet%20vriendelijke%20groet,%0D%0A[Uw%20naam]"
+   target="_blank"
+   rel="noopener noreferrer">Stuur mail</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
+</body>
+</html>
