@@ -1,17 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;700&display=swap');
 body {
         font-family: Bricolage Grotesque, 'Courier New', Courier, monospace, sans-serif;
-        background-color: wheat;
+        background-color: rgb(255, 255, 255);
+        padding: 0;
+        margin: 0;
 }
 
 h1 {
     font-size: 4.5rem;
     font-weight: bold;
+    margin: 0;
 }
 
 h2 {
     font-size: 2.5rem;
     font-weight: bold;
+}
+
+subtitle {
+    font-size: 2.5rem;
 }
 
 h3 {
@@ -40,7 +47,7 @@ h3 {
     background-color: #470900;
     color: white;
     float: left;
-    margin-right: 5px;  
+    margin-right: 0.6rem;  
 }
 
 .nav-button-secondary {
@@ -68,7 +75,7 @@ h3 {
     top: 1rem;
     left: 10%;
     right: 10%;
-    padding: 0.75rem;
+    padding: 0.9rem;
     border-radius: 20px;
     position: fixed;
     background-color: #ffffff;
@@ -77,4 +84,38 @@ h3 {
     align-items: center;
     box-shadow: 0px 0.01cm;
     color: #FFFFFF;
+    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.2);
+
+    z-index: 10;
 }
+
+header {
+    width: 100%;
+    height: 80vh;
+    background-image: url(../sources/Kaars.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.title {
+    padding-top: 32vh;
+    color: white;
+
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 10;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 80vh;
+    top: 0;
+    background: rgba(0, 0, 0, 0.4);
+    
+}
+
