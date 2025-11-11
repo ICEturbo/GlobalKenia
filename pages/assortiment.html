@@ -52,6 +52,29 @@
             padding-left: 3%;
             padding-right: 3%;
         }
+        
+        @media only screen and (max-width: 850px) {
+            .container {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+        }
+        @media only screen and (max-width: 500px) {
+            .container {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+            }
+            #kleinscherm {
+                
+            }
+
+        }
+        @media only screen and (max-width: 380px) {
+            .container {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+            }
+
+        }
 
         .item img {
             border-radius: 12px;
@@ -84,7 +107,7 @@
 
             <div class="menu-bottom">
                 <img src="../sources/logo.svg" alt="Foto Kon niet laden." style="height: 50px;">
-                <button id="openPopupSidebar" class="nav-button-secondary">Bestel nu</button>
+                <button id="openPopupSidebar" class="nav-button-secondary" >Bestel nu</button>
             </div>
         </div>
 
@@ -114,17 +137,9 @@
     <main>
         <section class="description">
             <h2>Het assortiment</h2>
-            <h3>Om mijn stagereis te sponsoren kan je verschillende producten kopen. Hieronder kan je het assortiment bekijken. Mocht je iets willen bestellen dan kan je een mail sturen naar <a href="mailto:m.pijnenburg@ll.gymnasiumarnhem.nl
-?subject=Bestelling
-&body=Ik%20wil%20graag%20een%20bestelling%20plaatsen.%0D%0A%0D%0ABestelling%20(vermeld%20ook%20de%20hoeveelheid):%0D%0A%0D%0ABezorgadres:%0D%0A%0D%0ABetaalmethode%20(Contant,%20Tikkie%20of%20doneerlink):%0D%0A%0D%0ABestelling%20geplaatst%20via%20(Maurits%20of%20Willy%20—%20als%20je%20het%20niet%20weet,%20vul%20Maurits%20in):%0D%0A%0D%0AOpmerkingen%20of%20vragen:%0D%0A%0D%0AMet%20vriendelijke%20groet,%0D%0A[Uw%20naam]"
-   target="_blank"
-   rel="noopener noreferrer">
+            <h3>Om mijn stagereis te sponsoren kan je verschillende producten kopen. Hieronder kan je het assortiment bekijken. Mocht je iets willen bestellen dan kan je een mail sturen naar <a href="#">
     m.pijnenburg@
-</a><a href="mailto:m.pijnenburg@ll.gymnasiumarnhem.nl
-?subject=Bestelling
-&body=Ik%20wil%20graag%20een%20bestelling%20plaatsen.%0D%0A%0D%0ABestelling%20(vermeld%20ook%20de%20hoeveelheid):%0D%0A%0D%0ABezorgadres:%0D%0A%0D%0ABetaalmethode%20(Contant,%20Tikkie%20of%20doneerlink):%0D%0A%0D%0ABestelling%20geplaatst%20via%20(Maurits%20of%20Willy%20—%20als%20je%20het%20niet%20weet,%20vul%20Maurits%20in):%0D%0A%0D%0AOpmerkingen%20of%20vragen:%0D%0A%0D%0AMet%20vriendelijke%20groet,%0D%0A[Uw%20naam]"
-   target="_blank"
-   rel="noopener noreferrer">
+</a><a href="#">
     ll.gymnasiumarnhem.nl
 </a></h3>
         </section>
@@ -156,7 +171,8 @@
             </div>
             <div class="item">
                 <img src="../sources/Dennenappelkaars3 copy.jpg" alt="Foto van Dennenappel niet laden">
-                <producttitle>Dennenappel</producttitle>
+                <producttitle id="kleinscherm">Dennen</producttitle><producttitleid id="kleinscherm">appel</producttitle>
+                <producttitle id="grootscherm">Dennenappel</producttitle>
                 <productomschrijving>kerstkaars</productomschrijving>
                 <productprijs>€ 5</productprijs>
             </div>
@@ -178,15 +194,16 @@
     
             <aside class="footeraside">
                 <h3>Doneer</h3>
-                <a href="assortiment.html">Bestel nu</a> 
+                <a id="openPopupFooter" href="#" onclick="return false;">Bestel nu</a>
+
+                <script>
+                    openPopupFooter.onclick = function() {
+                        popup.classList.add("active");
+                    }
+                </script>
+
                 <a href="https://donatie.global-exploration.nl/sponsor/GE-2895?back=true&donation=true">Doneer direct</a> 
-                <a href="mailto:m.pijnenburg@ll.gymnasiumarnhem.nl
-?subject=Donatie%20via%20mail
-&body=Hoi%20ik%20wil%20een%20donatie%20doen%20via%20mail,%0D%0A%0D%0ABedrag of materiële donatie:%0D%0A%0D%0ABetaalmethode%20(Contant,%20Tikkie,%20doneerlink%20of%20anders):%0D%0A%0D%0AOpmerkingen%20of%20vragen:%0D%0A%0D%0AMet%20vriendelijke%20groet,%0D%0A[Uw%20naam]"
-   target="_blank"
-   rel="noopener noreferrer">
-    Donatie via mail</a>
-            </aside>
+               </aside>
     
             <aside class="footeraside">
                 <h3>Informatie</h3>
@@ -217,11 +234,7 @@
             <span id="closePopup" class="close">&times;</span>
             <h2 style="margin-top: 0;margin-bottom: 0;">Bestellen</h2>
             <p>Leuk dat u iets wil bestellen!</p>
-            <p>Stuur een mailtje met uw bestelling naar: <a href="mailto:m.pijnenburg@ll.gymnasiumarnhem.nl
-?subject=Bestelling
-&body=Ik%20wil%20graag%20een%20bestelling%20plaatsen.%0D%0A%0D%0ABestelling%20(vermeld%20ook%20de%20hoeveelheid):%0D%0A%0D%0ABezorgadres:%0D%0A%0D%0ABetaalmethode%20(Contant,%20Tikkie%20of%20doneerlink):%0D%0A%0D%0ABestelling%20geplaatst%20via%20(Maurits%20of%20Willy%20—%20als%20je%20het%20niet%20weet,%20vul%20Maurits%20in):%0D%0A%0D%0AOpmerkingen%20of%20vragen:%0D%0A%0D%0AMet%20vriendelijke%20groet,%0D%0A[Uw%20naam]"
-   target="_blank"
-   rel="noopener noreferrer">
+            <p>Stuur een mailtje met uw bestelling naar: <a href="#">
     m.pijnenburg@ll.gymnasiumarnhem.nl
 </a>
             <p>Dan regelen we de betaling en verzending via de mail.</p>
@@ -231,13 +244,9 @@
             <i>Wilt u het assortiment nog even bekijken voordat u iets bestelt klik dan hieronder:</i>
             <p></p>
             <span id="viewProducts" class="nav-button-primary" style="float: none;">Bekijk assortiment</span>
-            <a class="nav-button-secondary" style="float: none;" href="mailto:m.pijnenburg@ll.gymnasiumarnhem.nl
-?subject=Bestelling
-&body=Ik%20wil%20graag%20een%20bestelling%20plaatsen.%0D%0A%0D%0ABestelling%20(vermeld%20ook%20de%20hoeveelheid):%0D%0A%0D%0ABezorgadres:%0D%0A%0D%0ABetaalmethode%20(Contant,%20Tikkie%20of%20doneerlink):%0D%0A%0D%0ABestelling%20geplaatst%20via%20(Maurits%20of%20Willy%20—%20als%20je%20het%20niet%20weet,%20vul%20Maurits%20in):%0D%0A%0D%0AOpmerkingen%20of%20vragen:%0D%0A%0D%0AMet%20vriendelijke%20groet,%0D%0A[Uw%20naam]"
-   target="_blank"
-   rel="noopener noreferrer">Stuur mail</a>
         </div>
     </div>
+
     <script src="script.js"></script>
 
 </body>
