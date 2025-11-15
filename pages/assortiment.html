@@ -66,9 +66,12 @@
             #grootscherm {
                 display: none;
             }
+            #kleinscherm {
+                display: block;
+            }
         }
 
-        @media only screen and (max-width: 850px) {
+        @media only screen and (min-width: 500px) {
             #kleinscherm {
                 display: none;
             }
@@ -176,7 +179,9 @@
             </div>
             <div class="item">
                 <img src="../sources/Dennenappelkaars3 copy.jpg" alt="Foto van Dennenappel niet laden">
-                <producttitle >Dennenappel</producttitle>
+                <producttitle id="grootscherm">Dennenappel</producttitle>
+                <producttitle id="kleinscherm">Dennen</producttitle>
+                <producttitle id="kleinscherm">appel</producttitle>
                 <productomschrijving>kerstkaars</productomschrijving>
                 <productprijs>€ 5</productprijs>
             </div>
@@ -237,7 +242,7 @@
         <div class="popup-content">
             <span id="closePopup" class="close">&times;</span>
             <h2 style="margin-top: 0;margin-bottom: 0;">Bestellen</h2>
-            <p>Leuk dat u iets wil bestellen!</p>
+            <p>Leuk dat u iets wilt bestellen!</p>
             <p>Stuur een mailtje met uw bestelling naar: <a href="#">
     m.pijnenburg@ll.gymnasiumarnhem.nl
 </a>
