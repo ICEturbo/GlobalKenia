@@ -14,6 +14,10 @@
     <title>Mijn stagereis</title>
 
     <style>
+        header {
+            background-image: url(../sources/AlleKaarsen2.jpg);
+        }
+
         .description {
             text-align: center;
             justify-content: center;
@@ -107,8 +111,8 @@
         <div id="sideMenu" class="side-menu">
             <div class="menu-top">
                 <div style="color: black;float: left;font-size: 30px;" class="hamburger" onclick="toggleMenu()">&times;</div>
-                <button class="nav-button-primary">Home</button>
-                <button class="nav-button-primary">Assortiment</button>
+                <button onclick="document.location='index.html'" class="nav-button-primary">Home</button>
+                <button onclick="document.location='assortiment.html'" class="nav-button-primary">Assortiment</button>
                 <button class="nav-button-primary">Blog</button>
                 <button class="nav-button-primary">Contact</button>
             </div>
@@ -127,7 +131,7 @@
         <section class="nav-bar">
             <div id="PC" style="float: right;">
                 <img style="float: left;padding-right: 10px;padding-top: 5px;" src="../sources/logo.svg" alt="Foto Kon niet laden.">
-                <button class="nav-button-primary">Home</button>
+                <button onclick="document.location='index.html'" class="nav-button-primary">Home</button>
                 <button onclick="document.location='assortiment.html'" class="nav-button-primary">Assortiment</button>
                 <button class="nav-button-primary">Blog</button>
                 <button class="nav-button-primary">Contact</button>
@@ -169,13 +173,13 @@
                 <img src="../sources/RondeKerstboomKaars2.jpg" alt="Foto kon niet laden">
                 <producttitle>Kerstboom (rond)</producttitle>
                 <productomschrijving>kerstkaars</productomschrijving>
-                <productprijs>€ 5</productprijs>
+                <productprijs>€ 5 (<5 over)</productprijs>
             </div>
             <div class="item">
                 <img src="../sources/PlatteKerstboomKaars.jpg" alt="Foto kon niet laden">
                 <producttitle>Kerstboom (plat)</producttitle>
                 <productomschrijving>kerstkaars</productomschrijving>
-                <productprijs>€ 5</productprijs>
+                <productprijs>€ 5 (<5 over)</productprijs>
             </div>
             <div class="item">
                 <img src="../sources/Dennenappelkaars3 copy.jpg" alt="Foto van Dennenappel niet laden">
@@ -183,13 +187,13 @@
                 <producttitle id="kleinscherm">Dennen</producttitle>
                 <producttitle id="kleinscherm">appel</producttitle>
                 <productomschrijving>kerstkaars</productomschrijving>
-                <productprijs>€ 5</productprijs>
+                <productprijs>€ 5 (<5 over)</productprijs>
             </div>
             <div class="item">
                 <img src="../sources/SterkbakjeKaars.jpg" alt="Foto kon niet laden">
                 <producttitle>Sterbakje</producttitle>
                 <productomschrijving>kerstkaars</productomschrijving>
-                <productprijs>€ 5</productprijs>
+                <productprijs style="color: rgb(160, 0, 0);">Uitverkocht</productprijs>
             </div>
         </section>
     </main>

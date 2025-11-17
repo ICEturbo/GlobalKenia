@@ -10,9 +10,53 @@
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200&display=swap" rel="stylesheet">
     
     <title>Mijn stagereis - Home</title>
+    
+    <style>
+        header {
+            background-image: url(../sources/HomeBackground.png);
+            
+        }
+
+        .image-text {
+            display: flex;
+            align-items: center;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            padding: 2%;
+        }
+
+        .content-image {
+            width: 48%;
+            
+
+            border-radius: 12px;
+        }
+
+        .content-text {
+            display: flex;
+            flex-direction: column;
+            top: 0;
+            width: 50%;
+            padding-left: 10%;
+            height: 100%;
+
+            h2 {
+                margin-top: 16px;
+                margin-bottom: 16px;
+            }
+        }
+
+        @media only screen and (min-width: 800px) {
+            .image-text {
+                margin-left: 15%;
+                margin-right: 15%;
+            }
+        }
+    </style>
 </head>
 <body>
-    <body>
     <div class="overlay"></div>
 
     <header>
@@ -20,8 +64,8 @@
         <div id="sideMenu" class="side-menu">
             <div class="menu-top">
                 <div style="color: black;float: left;font-size: 30px;" class="hamburger" onclick="toggleMenu()">&times;</div>
-                <button class="nav-button-primary">Home</button>
-                <button class="nav-button-primary">Assortiment</button>
+                <button onclick="document.location='index.html'" class="nav-button-primary">Home</button>
+                <button onclick="document.location='assortiment.html'" class="nav-button-primary">Assortiment</button>
                 <button class="nav-button-primary">Blog</button>
                 <button class="nav-button-primary">Contact</button>
             </div>
@@ -34,13 +78,13 @@
 
         <section class="title">
             <h1>Kenia: Een stagereis vol avontuur</h1>
-            <subtitle style="margin-top: 0;">Assortiment</subtitle>
+            <subtitle style="margin-top: 0;">Home</subtitle>
         </section>
 
         <section class="nav-bar">
             <div id="PC" style="float: right;">
                 <img style="float: left;padding-right: 10px;padding-top: 5px;" src="../sources/logo.svg" alt="Foto Kon niet laden.">
-                <button class="nav-button-primary">Home</button>
+                <button onclick="document.location='index.html'" class="nav-button-primary">Home</button>
                 <button onclick="document.location='assortiment.html'" class="nav-button-primary">Assortiment</button>
                 <button class="nav-button-primary">Blog</button>
                 <button class="nav-button-primary">Contact</button>
@@ -55,6 +99,90 @@
             </div>
         </section>
     </header>
+
     <main>
+        <section>
+            <div class="image-text">
+                <img class="content-image" src="../sources/SterkbakjeKaars.jpg" alt="Foto kon niet laden">
+                <div class="content-text">
+                    <h2>Deze pagina is in aanbouw</h2>
+                    <a>Ik ben Maurits Pijnenburg en ik ga komende zomer op stagereis naar Kenia met stichting global exploration.</a>
+                </div>
+            </div>
+
+            <div class="image-text">
+                <div class="content-text">
+                    <h2>Deze pagina is in aanbouw</h2>
+                    <a>Deze pagina is in aanbouw</a>
+                </div>
+                <img class="content-image" src="../sources/SterkbakjeKaars.jpg" alt="Foto kon niet laden">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footerdiv">
+            <aside class="footeraside">
+                
+                <img onclick="document.location='assortiment.html'" src="../sources/logo.svg" type="svg" id="footerlogo" href="http://www.google.com" />
+            </aside>
+    
+            <aside class="footeraside">
+                <h3>Doneer</h3>
+                <a id="openPopupFooter" href="#" onclick="return false;">Bestel nu</a>
+
+                <script>
+                    openPopupFooter.onclick = function() {
+                        popup.classList.add("active");
+                    }
+                </script>
+
+                <a href="https://donatie.global-exploration.nl/sponsor/GE-2895?back=true&donation=true">Doneer direct</a> 
+               </aside>
+    
+            <aside class="footeraside">
+                <h3>Informatie</h3>
+                <a href="https://iceturbo.github.io/Eindopdracht/pages/index">Stagereis Mongolië</a>
+                <a href="contact.html">Contact</a>  
+                <a href="blog.html">Blog</a>
+            </aside>
+    
+            <aside class="footeraside">
+                <h3>Social media</h3>
+                <a target="_blank" href="https://www.instagram.com/maurits_pijnenburg/">Instagram</a>
+                <a target="_blank" href="https://www.polarsteps.com/MauritsPijnenburg">Polarsteps</a>
+
+                
+
+                
+            </aside>
+
+            
+        </div>
+        <div class="Copyright">
+            <P>© 2025 Maurits Pijnenburg</P>
+        </div>
+    </footer>
+
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span id="closePopup" class="close">&times;</span>
+            <h2 style="margin-top: 0;margin-bottom: 0;">Bestellen</h2>
+            <p>Leuk dat u iets wilt bestellen!</p>
+            <p>Stuur een mailtje met uw bestelling naar: <a href="#">
+    m.pijnenburg@ll.gymnasiumarnhem.nl
+</a>
+            <p>Dan regelen we de betaling en verzending via de mail.</p>
+            <p>Mocht u in de buurt van Arnhem of Dieren wonen dan zou ik het bij u kunnen afleveren.
+            Als u verder woont moeten we iets afspreken.</p>
+            
+            <i>Wilt u het assortiment nog even bekijken voordat u iets bestelt klik dan hieronder:</i>
+            <p></p>
+            <span id="viewProducts" class="nav-button-primary" style="float: none;">Bekijk assortiment</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
