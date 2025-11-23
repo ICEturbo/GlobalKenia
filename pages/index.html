@@ -29,6 +29,7 @@
 
         #kleinscherm-img {
             display: inline;
+            
         }
 
         @media only screen and (min-width: 600px) {
@@ -47,10 +48,29 @@
                 justify-content: space-around;
             }
 
+            .content-text {
+                width: 100%;
+            }
+
+            .image-text {
+                margin-left: 0;
+                margin-right: 0;
+                padding: 0;
+                
+                h2 {
+                    padding-left: 10px;
+                }
+
+                a {
+                    padding-left: 20px;
+
+                }
+            }
+
             #kleinscherm-text {
                 justify-content: space-around;
                 text-align: center;
-                padding: 0;
+                padding: 20px;
                 margin: 0;
             }
         }
@@ -58,6 +78,7 @@
         .image-text a {
             color: black;
             padding: 5px;
+            
             font-size: larger;
         }
 
@@ -86,6 +107,12 @@
             .image-text {
                 margin-left: 15%;
                 margin-right: 15%;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            .content-text {
+                width: 100%;
             }
         }
     </style>
@@ -148,7 +175,7 @@
             </div>
 
             <div id="centreer" class="image-text">
-                <div style="color: black; padding-left: 0; padding-right: 10%;" class="content-text">
+                <div style="color: black; padding-left: 10px; padding-right: 10px;" class="content-text">
                     <h2>Wat is het doel van deze reis:</h2>
                     <a><b>Op deze reis gaan we focussen op de vier missies van stichting global exploration:</b></a>
                     <a><b></b>Wereldburger:</b> De verbinding met andere culturen</a>
