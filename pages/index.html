@@ -27,6 +27,40 @@
             padding: 2%;
         }
 
+        #kleinscherm-img {
+            display: inline;
+        }
+
+        @media only screen and (min-width: 600px) {
+            #onzichtbaarg600px {
+                display: none;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            #kleinscherm-img {
+                display: none;
+                justify-content: space-around;
+            }
+
+            #centreer {
+                justify-content: space-around;
+            }
+
+            #kleinscherm-text {
+                justify-content: space-around;
+                text-align: center;
+                padding: 0;
+                margin: 0;
+            }
+        }
+
+        .image-text a {
+            color: black;
+            padding: 5px;
+            font-size: larger;
+        }
+
         .content-image {
             width: 48%;
             
@@ -102,22 +136,42 @@
 
     <main>
         <section>
-            <div class="image-text">
-                <img class="content-image" src="../sources/SterkbakjeKaars.jpg" alt="Foto kon niet laden">
-                <div class="content-text">
-                    <h2>Deze pagina is in aanbouw</h2>
-                    <a>Ik ben Maurits Pijnenburg en ik ga komende zomer op stagereis naar Kenia met stichting global exploration.</a>
+            <div id="centreer" class="image-text">
+                <img id="kleinscherm-img" class="content-image" src="../sources/Profielfoto.jpg" alt="Foto kon niet laden">
+                <div id="kleinscherm-text" class="content-text">
+                    <h2>Wie ben ik?</h2>
+                    <a>Hoi, ik ben Maurits Pijnenburg. In de zomervakantie van 2026 ga ik samen met een groep leerlingen van het SGA en het Montessori College Nijmegen op stagereis naar Kenia met Stichting Global Exploration. Ik speel hockey, waar ik zowel als verdediger en keeper op het veld sta. Daarnaast game ik veel en heb ik een interesse in technologie</a>
+
+<a>Ik heb me ingeschreven na een eerdere succesvolle ervaring op een stagereis in Mongolië. Ik ben vooral nieuwsgierig in het verschil in cultuur en natuur, maar ik vind het ook leuk om op avontuur te gaan met leeftijdsgenoten.</a>
+                <img style="width: 100%;" id="onzichtbaarg600px" class="content-image" src="../sources/Profielfoto.jpg" alt="Foto kon niet laden">                
                 </div>
             </div>
 
-            <div class="image-text">
-                <div class="content-text">
-                    <h2>Deze pagina is in aanbouw</h2>
-                    <a>Deze pagina is in aanbouw</a>
+            <div id="centreer" class="image-text">
+                <div style="color: black; padding-left: 0; padding-right: 10%;" class="content-text">
+                    <h2>Wat is het doel van deze reis:</h2>
+                    <a><b>Op deze reis gaan we focussen op de vier missies van stichting global exploration:</b></a>
+                    <a><b></b>Wereldburger:</b> De verbinding met andere culturen</a>
+                    <a><b>Scholen voor scholen:</b> met hulp van stichting wilde gans kunnen we scholen helpen met grote projecten (dit jaar 3x een project van 10000 euro)</a>
+                    <a><b>Handen uit de mouwen:</b> Op locatie gaan we samen met leeftijdsgenoten de handen uit de mouwen steken. Denk aan het opknappen van klaslokalen, de schooltuin of faciliteiten.</a>
+                    <a><b>bewustwording:</b> Door middel van trainingen in Nederland en op bestemming worden we bewust van de sustainable development goals, wereldburgerschap en interculturaliteit.</a>
+
+                    <a><b>De reis bestaat ongeveer uit het volgende:</b></a>
+                    <ul>
+                        <li><a>Bezoek aan 2/3 scholen</a></li>
+                        <li><a>Community-projecten</a></li>
+                        <li><a>Heel veel cultuur</a></li>
+                        <li><a>Slapen in tenten (dus niet in hotels)</a></li>
+                        <li><a>Een gamedrive</a></li>
+                    </ul>
+                    </a>
+                    <img style="width: 100%;" id="onzichtbaarg600px" class="content-image" src="../sources/Global.png" alt="Foto kon niet laden">
                 </div>
-                <img class="content-image" src="../sources/SterkbakjeKaars.jpg" alt="Foto kon niet laden">
+                <img id="kleinscherm-img" class="content-image" src="../sources/Global.png" alt="Foto kon niet laden">
             </div>
         </section>
+
+        <a style="align-items: center; text-align: center; padding: 5px; position: relative; left: 45%;"> pagina is nog in aanbouw</a>
     </main>
 
     <footer>
